@@ -30,7 +30,7 @@ const paginaNosotros = (req, res) => {
 const paginaViajes = async (req, res) => {
   //Consultar DB
   const viajes = await Viaje.findAll();
-  console.log(viajes);
+  // console.log(viajes);
 
   res.render("viajes", {
     pagina: "Próximos viajes",
